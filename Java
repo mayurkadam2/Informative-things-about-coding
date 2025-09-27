@@ -1,0 +1,21 @@
+-----------------------------------------
+//array initialization
+
+int[] arr = new int[5];    = > not int[] arr;
+
+------------------------------------------
+
+// switch case syntax
+
+switch(expression){
+
+    case 'char':   =>  not case('char)
+        break;
+}
+
+------------------------------------------
+
+s.charAt(i) → Java’s official way
+not s[i]
+
+------------------------------------------
