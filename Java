@@ -4,7 +4,6 @@
 int[] arr = new int[5];    = > not int[] arr;
 
 ------------------------------------------
-
 // switch case syntax
 
 switch(expression){
@@ -14,8 +13,54 @@ switch(expression){
 }
 
 ------------------------------------------
+//important thing to know
 
 s.charAt(i) → Java’s official way
 not s[i]
 
 ------------------------------------------
+//To know about string in java
+
+String is not primitive in Java.
+String is a class in java;
+immutable => can not changed once created
+
+-------------------------------------------
+//Things to know
+
+Java is always pass-by-value.
+For primitives: value itself is copied.
+For objects: reference is copied (so changes to object are seen).
+For Strings: reference is copied, but object is immutable, so original never changes.
+
+--------------------------------------------
+//Objects in java
+
+Object variable → stores a reference (address) to the object.
+when we create a object it holds a address for that object.
+Car car1 = new Car();
+Car car2 = car1;
+    //Here, we don’t create a new Car.
+    //We just copy the address (the “key”) from car1 into car2.
+
+Now both car1 and car2 point to the same Car object in memory.
+
+   car1 ───────┐
+               │   
+               ▼
+         [ Car object in memory ]
+               ▲
+               │
+   car2 ───────┘
+
+
+it means we are creating a object in the memory and the car1 is just store the address of the object so we can reach to the object. there is no name for the object
+If no variable points to the object anymore → it becomes unreachable, and Java’s Garbage Collector will clean it up.
+Every objects have its
+Fields(State) => variables objects
+Methods(behaviour) => methos
+each object is like a package of data + behavior.
+--------------------------------------------
+
+
+
