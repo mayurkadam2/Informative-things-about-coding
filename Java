@@ -60,7 +60,97 @@ Every objects have its
 Fields(State) => variables objects
 Methods(behaviour) => methos
 each object is like a package of data + behavior.
+
 --------------------------------------------
+//Class Inside a class
+
+We can Create class inside a class.
+but we can not access the properties of that class out of the scope.
+
+--------------------------------------------
+//Package
+
+It is like a folder but for Java classes
+-> group for related classes
+-> helps to organize code
+Built-in packages → Already given by Java, like:
+java.util (contains tools like ArrayList, Scanner)
+java.io (for input/output, like files)
+java.sql (for database work)
+User-defined packages → Made by you, when you want to organize your own code.
+
+--------------------------------------------
+//getterMethod & setterMethod
+
+we use getter methods to get the values of the private fields of the class
+we use setter methods to set the values of the 
+private fields of the class
+getters/setters do give access — but with control.
+student.age = -10;
+That doesn’t make sense — a student can’t have age -10.
+So we make it:
+private int age;
+
+then ╗
+        ▼
+public void setAge(int age) {
+    if (age > 0) {
+        this.age = age;
+    } else {
+        System.out.println("Invalid age");
+    }
+}
+
+it will reject non important data
+The setter will reject it.
+
+                    |
+                    |
+                   \|/
+                    v
+
+This is called encapsulation → wrapping data + rules together.
+
+
+---------------------------------------------
+//this keyword
+ when we pass the atribute to the method of a class an if the name of that method mathches with the field variable the dumb pc gets confused.to avoid this confustion to tell the dumb pc that the this is our var and the other with the same name came from user.
+..))
+this is a reference variable in Java that always points to the current object of the class.
+
+this keyword does not limit himself here there are many uses of this keyword
+Calling another constructor in the same class:
+Passing the current object to another method:
+Returning the current object (useful in method chaining):
+
+
+----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
