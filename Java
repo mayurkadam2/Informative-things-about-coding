@@ -1,3 +1,43 @@
+//informative
+class ArrStack {
+    int[] stack;  stack  --->  null
+    int head = -1;
+    
+    ArrStack(int len) {
+        stack = new int[len]; stack  --->  [ 0, 0, 0, 0, 0 ]   // an array of length = len
+
+    }
+}
+
+--------------------------------------------------------
+//public, private and default keywords in java
+
+public
+Accessible from any other class or package in the Java program.
+Typically used for methods or variables that need to be available globally.
+
+private
+Accessible only within the class where it is declared.
+Used to restrict access and encapsulate data, protecting it from external modification.
+
+-------------------------------------------------------
+//Static and non static Variables.
+
+Static variable -
+
+static int = 5;
+Memory is allocated only once when the class is loaded
+All instances of the class share the same static variable.
+Can be accessed using the class name (e.g., ClassName.variableName), and also by object reference—but class name is preferred.
+Commonly used for constants, counters, or to store information shared across all objects.
+
+
+Non Static Variables
+
+Memory is allocated every time an object is created.
+
+
+
 -----------------------------------------
 //array initialization
 
