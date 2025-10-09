@@ -1,3 +1,43 @@
+When you write this
+Scanner sc = new Scanner(System.in);
+You are creating an object — yes, exactly like any other Java object!
+
+Scanner → is a class (a blueprint).
+new Scanner(System.in) → creates a real object from that class, and stores it in heap memory.
+sc → is just a reference variable that points to that object.
+
+Memory:
+┌─────────────┐
+│ sc          │───►  [ Scanner object in heap ]
+└─────────────┘
+
+What’s inside that Scanner object
+A buffer (a place in memory to hold keyboard input temporarily).
+A connection (link) to System.in, which is Java’s built-in stream for keyboard input.
+
+Keyboard → System.in → Scanner buffer → Your code
+
+When you call methods like:
+Here’s what happens behind the scenes:
+
+Scanner looks at its buffer.
+
+If it’s empty, it waits for you to type on the keyboard.
+
+You type something and press Enter.
+
+It reads that input, stores it in the buffer, and splits it into text (tokens).
+
+Returns the text to your variable.
+
+So yes — the Scanner object is doing real work every time you call its methods.
+
+----------------------------------------------------
+
+Java can run without a .class file — since Java 11
+
+------------------------------------------------------
+
 //informative
 class ArrStack {
     int[] stack;  stack  --->  null
