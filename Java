@@ -1,3 +1,20 @@
+Everything in Java is built on other utility classes!
+```
+
+## Layers of Utility Classes
+```
+Scanner (easiest to use)
+   ↓ uses
+BufferedReader (medium difficulty)
+   ↓ uses
+InputStreamReader (more complex)
+   ↓ uses
+System.in (even more low-level)
+   ↓ uses
+Native system calls (operating system level)
+
+
+
 When you write this
 Scanner sc = new Scanner(System.in);
 You are creating an object — yes, exactly like any other Java object!
