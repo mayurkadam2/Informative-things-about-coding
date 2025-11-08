@@ -1,3 +1,38 @@
+=======================================================================================
+
+An object array is a container that stores multiple objects in a single variable. You can think of it like a row of boxes, each holding an object.
+Object[] arr = new Object[3];
+arr[0] = "Mayur";
+arr[1] = 101;
+arr[2] = 8.75;
+
+- Object[] can hold any type of object: String, Integer, Double, custom classes, etc.
+- It cannot hold primitives directly (like int, double) — they get autoboxed into wrapper classes (Integer, Double, etc.).
+
+for example
+class Student {
+    int rollNo;
+    String name;
+    double sgpa;
+
+    Student(int r, String n, double s) {
+        rollNo = r;
+        name = n;
+        sgpa = s;
+    }
+}
+
+Student[] students = new Student[2];
+students[0] = new Student(101, "Mayur", 8.75);
+students[1] = new Student(102, "Asha", 9.10);
+
+- To store heterogeneous data (with Object[])
+- To store multiple instances of a class (like Student[])
+- Useful in data structures, tables, or dynamic programming
+
+
+========================================================================================
+
 Everything in Java is built on other utility classes!
 ```
 
