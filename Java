@@ -27,7 +27,7 @@ Element Storage →  |  arr[0] | arr[1] | arr[2] | arr[3] | arr[4] |   |
 
 
 
-
+ cannot assign a value to final variable length >>----=-----=-----=----=---->    arr.length = 6;
 =======================================================================================
 
 An object array is a container that stores multiple objects in a single variable. You can think of it like a row of boxes, each holding an object.
