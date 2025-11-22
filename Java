@@ -1,3 +1,33 @@
+======================================================================================
+An array in Java is a contiguous block of memory that stores multiple elements of the same data type 
+and allows constant-time (O(1)) random access using index values ranging from 0 to (n−1). 
+The size of an array is static, meaning it is fixed at creation and cannot be altered later. 
+Java provides a built-in instance variable called .length (not a method), which returns the total number of elements allocated in the array. 
+Therefore, if an array has n elements, valid index positions are [0 … n−1], 
+and any index outside this range results in an ArrayIndexOutOfBoundsException.
+
+
+
+
+                         +---------------------------------------+
+                         |            Java Array Object          |
+                         +---------------------------------------+
+                         |  length = 5       (stored in object)  |  ← built-in field
+                         +---------------------------------------+
+                         |  reference to element storage area    |
+                         +-------------------|-------------------+
+                                             |
+                                             |
+                                             v
+                   +-------------------------------------------------+
+Element Storage →  |  arr[0] | arr[1] | arr[2] | arr[3] | arr[4] |   |
+(Heap memory)      |   10    |   20    |   30    |   40    |   50    |
+                   +-------------------------------------------------+
+            index:     0         1         2         3         4
+
+
+
+
 =======================================================================================
 
 An object array is a container that stores multiple objects in a single variable. You can think of it like a row of boxes, each holding an object.
