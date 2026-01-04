@@ -1,8 +1,46 @@
-======================================================================================
+
+
+
+===============================================================================================================================================================================
+
+
+###**ArrayList**
+
+- ArrayList is a class that implements the List interface.
+- In Java, it’s common practice to declare variables using the interface type (List) rather than the concrete implementation (ArrayList).
+- This makes your code more flexible:
+        You can later change the implementation 
+        to another List type (like LinkedList, CopyOnWriteArrayList, etc.) 
+        without changing the rest of your code.
+
+
+Difference Between 
+
+											List<Integer> 				vs		 	ArrayList<Integer>
+
+
++------------------------------------------------+---------------------------+----------------------------------------------------------+
+|                 Declaration                    |         Flexibility       |                          Notes                           | 
++------------------------------------------------+---------------------------+----------------------------------------------------------+
+| ArrayList<Integer> list = new ArrayList<>();   | Tied to ArrayList only    | You can only use ArrayList methods.                      | 
+-------------------------------------------------+---------------------------+----------------------------------------------------------+
+| List<Integer> list = new ArrayList<>();        |  More flexible            | You can swap ArrayList with LinkedList or others easily. |  ✅ MOST DEVELOPER PREFERS THIS
++------------------------------------------------+---------------------------+----------------------------------------------------------+
+
+
+
+
+
+
+====================================================================================================================================================================================
+
+//Array in java
+
+
 An array in Java is a contiguous block of memory that stores multiple elements of the same data type 
 and allows constant-time (O(1)) random access using index values ranging from 0 to (n−1). 
 The size of an array is static, meaning it is fixed at creation and cannot be altered later. 
-Java provides a built-in instance variable called .length (not a method), which returns the total number of elements allocated in the array. 
+Java provides a built-in instance variable called  ---->> .length (not a method), which returns the total number of elements allocated in the array. 
 Therefore, if an array has n elements, valid index positions are [0 … n−1], 
 and any index outside this range results in an ArrayIndexOutOfBoundsException.
 
@@ -28,7 +66,10 @@ Element Storage →  |  arr[0] | arr[1] | arr[2] | arr[3] | arr[4] |   |
 
 
  cannot assign a value to final variable length >>----=-----=-----=----=---->    arr.length = 6;
+
+
 =======================================================================================
+
 
 An object array is a container that stores multiple objects in a single variable. You can think of it like a row of boxes, each holding an object.
 Object[] arr = new Object[3];
@@ -63,6 +104,7 @@ students[1] = new Student(102, "Asha", 9.10);
 
 ========================================================================================
 
+
 Everything in Java is built on other utility classes!
 ```
 
@@ -90,7 +132,7 @@ sc → is just a reference variable that points to that object.
 
 Memory:
 ┌─────────────┐
-│ sc          │───►  [ Scanner object in heap ]
+│     sc      │───►  [ Scanner object in heap ]
 └─────────────┘
 
 What’s inside that Scanner object
@@ -114,19 +156,21 @@ Returns the text to your variable.
 
 So yes — the Scanner object is doing real work every time you call its methods.
 
-----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 
 Java can run without a .class file — since Java 11
-
-------------------------------------------------------
+means without compiling the code we can directly run java
+Java filename		✅
+Java filename.java	❌
+-----------------------------------------------------------------------------------------------------------------
 
 //informative
 class ArrStack {
-    int[] stack;  stack  --->  null
+    int[] stack;  						stack  --->  null
     int head = -1;
     
     ArrStack(int len) {
-        stack = new int[len]; stack  --->  [ 0, 0, 0, 0, 0 ]   // an array of length = len
+        stack = new int[len]; 			stack  --->  [ 0, 0, 0, 0, 0 ]   // an array of length = len
 
     }
 }
@@ -145,8 +189,7 @@ Used to restrict access and encapsulate data, protecting it from external modifi
 -------------------------------------------------------
 //Static and non static Variables.
 
-Static variable -
-
+----[ ] Static variable
 static int = 5;
 Memory is allocated only once when the class is loaded
 All instances of the class share the same static variable.
@@ -154,7 +197,7 @@ Can be accessed using the class name (e.g., ClassName.variableName), and also by
 Commonly used for constants, counters, or to store information shared across all objects.
 
 
-Non Static Variables
+----[ ] Non Static Variables
 
 Memory is allocated every time an object is created.
 
@@ -170,7 +213,7 @@ int[] arr = new int[5];    = > not int[] arr;
 
 switch(expression){
 
-    case 'char':   =>  not case('char)
+    case 'char':   =>  not case('char')
         break;
 }
 
@@ -287,32 +330,3 @@ Returning the current object (useful in method chaining):
 
 
 ----------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
