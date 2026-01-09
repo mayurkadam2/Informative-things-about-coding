@@ -1,1 +1,74 @@
 ADVANCED JAVA CONCEPTS
+
+
+----------------------------------------------------------------------------------------------
+DOWNLOADED JAVA
+sudo apt install default-jdk
+
+DOWNLOAD Eclipse IDE
+sudo snap install eclipse --classic
+
+DOWNLOAD Mysql Server and SQL workbench
+sudo apt install mysql-server
+sudo apt install mysql-client
+sudo apt install mysql-workbench-community
+
+
+CHANGE THE USERS in mySQL
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Root@1234';
+FLUSH PRIVILEGES;
+
+download 
+mysql-connector-j-8.0.xx.jar
+
+ADD jar to project
+right-click to project name
+click build path
+configure build path
+Libraries tab
+Add external JARs
+select jar file and apply
+
+
+
+
+
+THE CODE
+
+
+package JDBC;
+import java.sql.*;
+
+public class Main {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection cn = DriverManager.getConnection(
+						"jdbc:mysql://localhost:3306/",
+						"root",
+						"Root@1234"
+					);
+			
+			Statement stmt = cn.createStatement();
+			
+			String sql = "CREATE DATABASE myDB";
+			stmt.executeUpdate(sql);
+			
+			System.out.println("Database created successfully!");
+			
+			stmt.close();
+			cn.close();
+			
+			
+					
+					
+			
+		}
+		catch(Exception e) {
+			System.out.println(e);
+			
+		}
+	}
+}
+---------------------------------------------------------------------------------------------------------------------
+
