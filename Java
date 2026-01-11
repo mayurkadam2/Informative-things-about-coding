@@ -1,4 +1,38 @@
 
+You’re acting like Java’s Stack is some sacred relic that only holds one primitive at a time. 
+It isn’t. The moment you need to store two integers, you don’t reinvent data structures — you wrap them. 
+That’s the entire point of objects.
+A stack stores objects, not primitives. So if you wrap your two integers together in a single object, 
+you can push that object onto any built-in stack.
+
+“Make a tiny object → treat it as one unit.”
+
+=====================================================================================================
+
+we can not call a methods using an object unless it exists in the class.
+
+======================================================================================================
+In Java, you can’t just drop a statement directly inside a class body. For example:
+public class CustomStack {
+    // This will cause error:
+    System.out.println("Custom Stack object is created!! ");
+}
+- ✅ Correct placement inside a constructor or method
+public class CustomStack {
+    public CustomStack() {
+        System.out.println("Custom Stack object is created!! ");  // debugging purpose only
+    }
+}
+
+
+=======================================================================================================================
+
+error: unreachable statement
+the statement is placed after return statement
+if (stack.isEmpty()) {
+    return true;
+    System.out.println("isEmpty method returned true"); // unreachable
+}
 
 
 ===============================================================================================================================================================================
@@ -296,7 +330,7 @@ That doesn’t make sense — a student can’t have age -10.
 So we make it:
 private int age;
 
-then ╗
+then ---╗
         ▼
 public void setAge(int age) {
     if (age > 0) {
