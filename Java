@@ -1,4 +1,11 @@
 
+ArrayDeque<Container> stack = new ArrayDeque<>();
+
+Container is a custom class
+
+=====================================================================================================
+
+
 You’re acting like Java’s Stack is some sacred relic that only holds one primitive at a time. 
 It isn’t. The moment you need to store two integers, you don’t reinvent data structures — you wrap them. 
 That’s the entire point of objects.
