@@ -1,0 +1,3 @@
+in JavaScript, arrays are just special objects, so you can also use them like a dictionary (key-value store).
+Your blocks is acting like a dictionary keyed by "row-col" strings, not a traditional array. That’s why it works, but it’s a bit misleading to initialize it as [].
+blocks['${row}-{col}'] = block;
