@@ -1,3 +1,15 @@
+=================================================================================================
+Integer.MAX_VALUE
+
+it is a
+	A public static final constant in Java
+	Defined inside the java.lang.Integer class
+	Represents the largest value an int can store
+    public static final int MAX_VALUE = 2147483647;
+				so
+	Integer.MAX_VALUE == 2_147_483_647
+
+
 
 ===================================================================================================
 			 +-----------+
