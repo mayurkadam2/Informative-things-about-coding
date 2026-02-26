@@ -11,3 +11,61 @@ open terminal in vscode / in that directory
 now some other commands.
 git remote -v                      ==> this used to check in which remote (repo / directory) we are going to save our code
 git remote set-url https:urltoyournewRepoOrfolde.git
+
+
+==================================================================================================================================
+Git has a pointer called HEAD.
+HEAD points to the current branch.
+The branch points to a commit.
+
+git switch main
+
+git switch -c feature/welcome-board
+//new branch creation
+-c means create
+Without -c, git switch feature/welcome-board would only work if that branch already exists.
+
+
+To confirm where HEAD is pointing
+git branch
+
+git add . moves all modified and new files from the working directory into the staging area.
+It does not commit.
+It prepares.
+The . means “current directory and everything inside it.”
+Without git add, git commit will not include your edits.
+git commit -m "Add welcome instruction board feature"
+creates an immutable snapshot of everything currently staged.
+Mechanically:
+
+• Git takes the staged file states
+• Creates a new commit object
+• Stores metadata (author, time, message)
+• Moves the branch pointer forward to that new commit
+
+
+git push -u origin feature/welcome-instruction-board
+-u means --set-upstream
+Pushes your local branch to the remote.
+Links your local branch to that remote branch.
+
+After this, future pushes can be simplified to:
+
+git push
+because Git now knows which remote branch it tracks.
+Without -u, you would have to specify remote and branch every time.
+
+When you cloned the repository or first connected it to GitHub, Git stored a remote name.
+By default, that remote is called origin
+
+
+git switch main
+
+switching is not merging.
+
+git switch main only moves HEAD to the main branch.
+It changes which timeline you are standing on.
+It does not combine anything.
+
+git merge feature/welcome-instruction-board
+=========================================================================================================================================================
