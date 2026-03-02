@@ -1,0 +1,19 @@
+d-flex
+Sets display: flex;. The element becomes a flex container. Its direct children become flex items. Flexbox enables dynamic alignment, distribution, and resizing along axes.
+
+flex-column
+Changes the flex direction to vertical: flex-direction: column;.
+Default flex direction is row (horizontal). This forces children to stack top-to-bottom.
+
+flex-shrink-0
+Sets flex-shrink: 0;.
+Normally, flex items can shrink when space is limited. This prevents shrinking. The element keeps its width/height even if the parent is tight. Often used for sidebars.
+
+p-3
+Adds padding on all sides. In Bootstrap spacing scale, 3 = 1rem (usually 16px).
+Equivalent to padding: 1rem;
+
+bg-body-tertiary
+Applies a contextual background color from Bootstrap’s theme variables.
+“tertiary” is a subtle background shade, usually lighter than primary surfaces. It adapts to light/dark mode automatically.
+
