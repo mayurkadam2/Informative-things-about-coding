@@ -1,3 +1,15 @@
+================================================================================================
+
+// Wrong: subList(2,2) → empty
+List<Integer> emptySub = arrList.subList(2, 2);
+System.out.println(Collections.max(emptySub)); // throws NoSuchElementException
+
+
+Note [ ..... )
+// Sublist containing only the element at index 2
+List<Integer> subList = list.subList(2, 3);
+
+
 =================================================================================================
 Integer.MAX_VALUE
 
