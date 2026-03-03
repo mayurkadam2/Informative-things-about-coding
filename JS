@@ -1,3 +1,16 @@
+----------------------------------------------------
+
+
+getElementsByClassName(): It matches the elements with the specified class name, and returns a set of the matched elements.
+The returned elements are live HTML collection of elements.
+These live elements can be further updated if any changes are made in the Document Object Model.
+
+querySelector(): It returns only a single element that matches the specified classname. If it does not find any matching element, it returns null.
+
+
+---------------------------------------------------
+
+
 document.createElement('elementName');
 document.createElement('elementName').appendChild(document.queryselector('.class'));
 
