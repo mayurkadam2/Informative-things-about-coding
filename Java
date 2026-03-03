@@ -1,3 +1,12 @@
+
+
+==============================================================================================
+
+
+Since every branch ends with a return, the compiler sees that no matter what n is, the method will always return a double.
+That’s why Java doesn’t complain about “missing return statement.”
+
+
 ================================================================================================
 
 // Wrong: subList(2,2) → empty
