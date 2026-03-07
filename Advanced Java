@@ -1,5 +1,81 @@
 ADVANCED JAVA CONCEPTS
 
+JDBC
+
+It provides a standard library for Java programs to connect to a database and send it commands using SQL
+
+
+JDBC API Standardizes:
+
+    Way to establish connection to database
+    Approach to initiating queries
+    Method to create stored procedures
+    Data structure of the query result
+
+Basic Steps
+
+• Import the necessary classes
+• Load the JDBC driver
+• Identify the data source (Define the Connection URL)
+• Establish the Connection
+• Create a Statement Object
+• Execute query string using Statement Object
+• Retrieve data from the returned ResultSet Object
+• Close ResultSet & Statement & Connection Object in order
+
+Java Server Pages
+Overview of History Java Server Pages (JSP) JSP Tags Using Java Bean Without using JDBC Using JDBC --> Database
+
+
+Server-side Programming:
+Java Servlets
+Servlet is a technology i.e. used to create web application. Servlet is an API that provides many interfaces and classes including documentations. Servlet is an interface that must be implemented for creating any servlet. Servlet is a class that extends the capabilities of the servers and responds to the incoming requests. It can respond to any type of requests. Servlet is a web component that is deployed on the server to create dynamic web page. 
+
+
+Advantage of Servlet
+
+• The web container creates threads for handling the multiple requests to the servlet.
+• Threads have a lot of benefits over the Processes such as they share a common memory area, lightweight, cost of communication between the threads are low. 
+
+Java servlets are one technology for producing dynamic server responses
+ Servlet is a class instantiated by the server to produce a dynamic response
+
+
+Spring Framework
+The Spring Framework is a powerful, feature-rich framework for Java development, primarily used for building enterprise applications. It provides comprehensive infrastructure support for developing Java applications and is widely used for dependency injection, aspect-oriented programming (AOP), and transaction management.
+
+Prior to the advent of Enterprise Java Beans (EJB), Java developers needed to use JavaBeans to create Web applications. Although JavaBeans helped in the development of user interface (UI) components, they were not able to provide services, such as transaction management and security, which were required for developing robust and secure enterprise applications. The advent of EJB was seen as a solution to this problem EJB extends the Java components, such as Web and enterprise components, and provides services that help in enterprise application development. However, developing an enterprise application with EJB was not easy, as the developer needed to perform various tasks, such as creating Home and Remote interfaces and implementing lifecycle callback methods which lead to the complexity of providing code for EJBs Due to this complication, developers started looking for an easier way to develop enterprise applications.
+
+The IoC (Inversion of Control) container in the Spring framework is primarily responsible for managing the lifecycle of application objects (called beans) and injecting their dependencies automatically, thereby decoupling object creation from business logic. It ensures that objects don’t need to manually construct or locate their dependencies, making applications more modular, testable, and maintainable.
+
+Spring Boot
+Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run". We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need minimal Spring configuration.
+
+Features
+
+    Create stand-alone Spring applications.
+    Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files).
+    Provide opinionated 'starter' dependencies to simplify your build configuration.
+    Automatically configure Spring and 3rd party libraries whenever possible.
+    Provide production-ready features such as metrics, health checks, and externalized configuration.
+    Absolutely no code generation and no requirement for XML configuration.
+    Spring Boot Tutorial provides basic and advanced concepts of Spring Framework. Our Spring Boot Tutorial is designed for beginners and professionals both.
+
+
+    Spring Boot is a Spring module that provides the RAD (Rapid Application Development) feature to the Spring framework.
+
+
+    Our Spring Boot Tutorial includes all topics of Spring Boot such, as features, project, maven project, starter project wizard, Spring Initializr, CLI, applications, annotations, dependency management, properties, starters, Actuator, JPA, JDBC, etc.?
+
+Hibernate Framework
+
+Hibernate is a Java framework that simplifies the development of Java application to interact with the database. It is an open source, lightweight, ORM (Object Relational Mapping) tool. Hibernate implements the specifications of JPA (Java Persistence API) for data persistence.
+
+
+ORM Tool
+
+An ORM tool simplifies the data creation, data manipulation and data access. It is a programming technique that maps the object to the data stored in the database.
+
 
 ----------------------------------------------------------------------------------------------
 DOWNLOADED JAVA
