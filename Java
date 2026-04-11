@@ -1,5 +1,15 @@
 
 
+
+==========================================================================================
+
+
+Shallow Copy
+-- a shallow copy means copy of the reference of the memory location.
+Deep Copy
+-- deep copy means the copy of the memory also.
+
+
 ==============================================================================================
 
 
