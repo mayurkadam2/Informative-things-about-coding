@@ -1,4 +1,11 @@
-----------------------------------------------------
+
+![](https://img.shields.io/badge/Mayur_Kadam_is_the_best-8A2BE2)
+- [ ] Yes Mayur is best
+
+In programming, a function is a reusable block of code that performs a specific task and can be called with various inputs. 
+A method, on the other hand, is a type of function that is associated with an object, meaning it operates on the data contained within that object.
+
+<hr>
 
 
 getElementsByClassName(): It matches the elements with the specified class name, and returns a set of the matched elements.
@@ -8,7 +15,7 @@ These live elements can be further updated if any changes are made in the Docume
 querySelector(): It returns only a single element that matches the specified classname. If it does not find any matching element, it returns null.
 
 
----------------------------------------------------
+<hr>
 
 
 document.createElement('elementName');
