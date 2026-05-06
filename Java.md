@@ -1,23 +1,35 @@
 
+### To get a ASCII to Binary String 8 bit sized
+```
+class Main {
+    public static void main(String[] args) {
+        int a = 15;
+        String binary = Integer.toBinaryString(a);
+        System.out.println(binary);
+        String formattedBinary = String.format("%8s", binary);
+        System.out.println(formattedBinary);
+        formattedBinary = formattedBinary.replace(' ', '0');
+        System.out.println(formattedBinary);
+    }
+}
+```
+
+---
 
 
-==========================================================================================
+### Shallow Copy
+- a shallow copy means copy of the reference of the memory location.
+### Deep Copy
+- deep copy means the copy of the memory also.
 
-
-Shallow Copy
--- a shallow copy means copy of the reference of the memory location.
-Deep Copy
--- deep copy means the copy of the memory also.
-
-
-==============================================================================================
+---
 
 
 Since every branch ends with a return, the compiler sees that no matter what n is, the method will always return a double.
 That’s why Java doesn’t complain about “missing return statement.”
 
 
-================================================================================================
+---
 
 // Wrong: subList(2,2) → empty
 List<Integer> emptySub = arrList.subList(2, 2);
@@ -29,7 +41,7 @@ Note [ ..... )
 List<Integer> subList = list.subList(2, 3);
 
 
-=================================================================================================
+---
 Integer.MAX_VALUE
 
 it is a
@@ -42,7 +54,8 @@ it is a
 
 
 
-===================================================================================================
+---
+```
 			 +-----------+
              |   List    |
              +-----------+
@@ -55,12 +68,14 @@ it is a
 | ArrayList |         | LinkedList |         |  Stack  |         |  Vector  |
 +-----------+         +------------+         +---------+         +----------+
 
-=====================================================================================================
+```
+---
+
 ArrayDeque<Container> stack = new ArrayDeque<>();
 
 Container is a custom class
 
-=====================================================================================================
+---
 
 
 You’re acting like Java’s Stack is some sacred relic that only holds one primitive at a time. 
@@ -71,12 +86,14 @@ you can push that object onto any built-in stack.
 
 “Make a tiny object → treat it as one unit.”
 
-=====================================================================================================
+---
 
 we can not call a methods using an object unless it exists in the class.
 
-======================================================================================================
+---
+
 In Java, you can’t just drop a statement directly inside a class body. For example:
+```
 public class CustomStack {
     // This will cause error:
     System.out.println("Custom Stack object is created!! ");
@@ -87,9 +104,9 @@ public class CustomStack {
         System.out.println("Custom Stack object is created!! ");  // debugging purpose only
     }
 }
+```
 
-
-=======================================================================================================================
+---
 
 error: unreachable statement
 the statement is placed after return statement
@@ -98,11 +115,10 @@ if (stack.isEmpty()) {
     System.out.println("isEmpty method returned true"); // unreachable
 }
 
+---
 
-===============================================================================================================================================================================
 
-
-###**ArrayList**
+### **ArrayList**
 
 - ArrayList is a class that implements the List interface.
 - In Java, it’s common practice to declare variables using the interface type (List) rather than the concrete implementation (ArrayList).
@@ -114,23 +130,17 @@ if (stack.isEmpty()) {
 
 Difference Between 
 
+
+
 											List<Integer> 				vs		 	ArrayList<Integer>
 
-
-+------------------------------------------------+---------------------------+----------------------------------------------------------+
-|                 Declaration                    |         Flexibility       |                          Notes                           | 
-+------------------------------------------------+---------------------------+----------------------------------------------------------+
-| ArrayList<Integer> list = new ArrayList<>();   | Tied to ArrayList only    | You can only use ArrayList methods.                      | 
--------------------------------------------------+---------------------------+----------------------------------------------------------+
-| List<Integer> list = new ArrayList<>();        |  More flexible            | You can swap ArrayList with LinkedList or others easily. |  ✅ MOST DEVELOPER PREFERS THIS
-+------------------------------------------------+---------------------------+----------------------------------------------------------+
+| Declaration                                | Flexibility             | Notes                                                   |
+|--------------------------------------------|-------------------------|---------------------------------------------------------|
+| `ArrayList<Integer> list = new ArrayList<>();` | Tied to ArrayList only  | You can only use ArrayList methods.                     |
+| `List<Integer> list = new ArrayList<>();`     | More flexible           | You can swap ArrayList with LinkedList or others easily. ✅ MOST DEVELOPERS PREFER THIS |
 
 
-
-
-
-
-====================================================================================================================================================================================
+---
 
 //Array in java
 
@@ -142,7 +152,7 @@ Java provides a built-in instance variable called  ---->> .length (not a method)
 Therefore, if an array has n elements, valid index positions are [0 … n−1], 
 and any index outside this range results in an ArrayIndexOutOfBoundsException.
 
-
+```
 
 
                          +---------------------------------------+
@@ -165,9 +175,8 @@ Element Storage →  |  arr[0] | arr[1] | arr[2] | arr[3] | arr[4] |   |
 
  cannot assign a value to final variable length >>----=-----=-----=----=---->    arr.length = 6;
 
-
-=======================================================================================
-
+```
+---
 
 An object array is a container that stores multiple objects in a single variable. You can think of it like a row of boxes, each holding an object.
 Object[] arr = new Object[3];
@@ -199,12 +208,10 @@ students[1] = new Student(102, "Asha", 9.10);
 - To store multiple instances of a class (like Student[])
 - Useful in data structures, tables, or dynamic programming
 
-
-========================================================================================
-
+---
 
 Everything in Java is built on other utility classes!
-```
+
 
 ## Layers of Utility Classes
 ```
@@ -217,7 +224,7 @@ InputStreamReader (more complex)
 System.in (even more low-level)
    ↓ uses
 Native system calls (operating system level)
-
+```
 
 
 When you write this
@@ -229,9 +236,11 @@ new Scanner(System.in) → creates a real object from that class, and stores it 
 sc → is just a reference variable that points to that object.
 
 Memory:
+```
 ┌─────────────┐
 │     sc      │───►  [ Scanner object in heap ]
 └─────────────┘
+```
 
 What’s inside that Scanner object
 A buffer (a place in memory to hold keyboard input temporarily).
@@ -260,9 +269,11 @@ Java can run without a .class file — since Java 11
 means without compiling the code we can directly run java
 Java filename		✅
 Java filename.java	❌
+
 -----------------------------------------------------------------------------------------------------------------
 
 //informative
+```
 class ArrStack {
     int[] stack;  						stack  --->  null
     int head = -1;
@@ -272,7 +283,7 @@ class ArrStack {
 
     }
 }
-
+```
 --------------------------------------------------------
 //public, private and default keywords in java
 
@@ -309,12 +320,13 @@ int[] arr = new int[5];    = > not int[] arr;
 ------------------------------------------
 // switch case syntax
 
+```
 switch(expression){
 
     case 'char':   =>  not case('char')
         break;
 }
-
+```
 ------------------------------------------
 //important thing to know
 
@@ -347,7 +359,7 @@ Car car2 = car1;
     //We just copy the address (the “key”) from car1 into car2.
 
 Now both car1 and car2 point to the same Car object in memory.
-
+```
    car1 ───────┐
                │   
                ▼
@@ -355,7 +367,7 @@ Now both car1 and car2 point to the same Car object in memory.
                ▲
                │
    car2 ───────┘
-
+```
 
 it means we are creating a object in the memory and the car1 is just store the address of the object so we can reach to the object. there is no name for the object
 If no variable points to the object anymore → it becomes unreachable, and Java’s Garbage Collector will clean it up.
@@ -393,7 +405,7 @@ student.age = -10;
 That doesn’t make sense — a student can’t have age -10.
 So we make it:
 private int age;
-
+```
 then ---╗
         ▼
 public void setAge(int age) {
@@ -404,6 +416,7 @@ public void setAge(int age) {
     }
 }
 
+
 it will reject non important data
 The setter will reject it.
 
@@ -413,7 +426,7 @@ The setter will reject it.
                     v
 
 This is called encapsulation → wrapping data + rules together.
-
+```
 
 ---------------------------------------------
 //this keyword
