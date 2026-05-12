@@ -6,3 +6,7 @@ What I have learned during my coding sessions. <br/>
 Writing down it here for future reference and quick revisions.
 <br/><br/>
 <img width="480" height="270" alt="trials and errors" src="https://github.com/user-attachments/assets/1cf7ff99-23a2-4961-a699-fe9b4ebfc174" />
+
+
+
+, w̵̛̛̼̰̟̮̳̜͔̹̞͕̱̱̥̠̬͍̩͔̱̖͎̲̩̭͉͖̤̙̻̥̫̮̽́̿̎̀͒͋́̒̒̿͋̑͊̔͌̎́̿̋́͌̍̍̽͊̿̓̈́̚̚͝͝w̵̛̛̼̰̟̮̳̜͔̹̞͕̱̱̥̠̬͍̩͔̱̖͎̲̩̭͉͖̤̙̻̥̫̮̽́̿̎̀͒͋́̒̒̿͋̑͊̔͌̎́̿̋́͌̍̍̽͊̿̓̈́̚̚͝͝Bۙۚۨ۫ۙۚۨ۫ۙۚۨ۫ۙۚۨ۫
