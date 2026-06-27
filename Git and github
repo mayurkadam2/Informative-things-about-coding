@@ -69,3 +69,10 @@ It does not combine anything.
 
 git merge feature/welcome-instruction-board
 =========================================================================================================================================================
+
+# Repo cloning
+git clone https://github.com/username/repository.git
+
+git pull origin main
+Fetches new changes from the remote repository and merges them into your local branch
+Keeps your local repo up to date with GitHub.
