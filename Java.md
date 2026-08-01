@@ -1,3 +1,31 @@
+## Array  to string
+| **Expression** | **What It Prints** | **Why** |
+| --- | --- | --- |
+| ``arr.toString()`` | Something like ``[I@1a2b3c4d`` | Calls ``Object.toString()`` on the array object → prints type + hashcode, not contents. |
+| ``Arrays.toString(arr)`` | ``[1, ``2, ``3, ``4]`` | Utility method that loops through elements and builds a readable string of contents. |
+---
+## Ways to Iterate Hashmap
+Modern concise iteration
+``` map.forEach((key, value) -> System.out.println(key + " -> " + value)); ```
+
+```
+	import java.util.HashMap;
+import java.util.Map;
+public class MapEntryDemo {
+    public static void main(String[] args) {
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "Java");
+        map.put(2, "Python");
+        map.put(3, "C++");
+
+		// YOUR EYES HERE 👇👇
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
+    }
+}
+```
+---
 
 ### To get a ASCII to Binary String 8 bit sized
 ```
