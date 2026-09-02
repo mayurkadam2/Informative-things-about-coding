@@ -1,3 +1,20 @@
+## copy of a array
+arraycopy is a native/JVM-level operation, not a pure-Java utility
+public static native void arraycopy(
+    Object src,     // source array
+    int srcPos,     // starting index in src
+    Object dest,    // destination array
+    int destPos,    // starting index in dest
+    int length      // number of elements to copy
+);
+
+int[] src  = {1, 2, 3, 4, 5};
+int[] dest = new int[5];
+
+System.arraycopy(src, 0, dest, 0, 5);
+// dest = [1, 2, 3, 4, 5]
+
+
 ## Array  to string
 | **Expression** | **What It Prints** | **Why** |
 | --- | --- | --- |
