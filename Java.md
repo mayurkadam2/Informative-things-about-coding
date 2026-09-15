@@ -1,3 +1,19 @@
+## this()
+this() is a special constructor call used to invoke another constructor of the same class.
+Rules for this()
+- must be a first statement in the constructor
+- it can only be used inside the constructor
+- used for constructor chaining (ex calling parameterized constructor inside default constructor)
+- can not used this and super() togher
+- this and this() are differnt
+
+## super()
+used to call parent constructor
+used to reuse parent logic
+if you do not use super java still initiats it automatically
+we can not use this and super together
+
+
 ## copy of a array
 arraycopy is a native/JVM-level operation, not a pure-Java utility
 public static native void arraycopy(
