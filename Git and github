@@ -4,15 +4,23 @@ open terminal in vscode / in that directory
 1 git init                           ==> this initiallizes git in the repo
 2 git add .                          ==> this adds add the files in that repo to the git check for file names U
 3 git commit -m "commit message"     ==> now you are commiting this all the files
-4 git branch -M main                 ==> I think this creates a branch
+4 git branch -M main                 ==> It renames the branch *master to *main
 5 git remote add origin https:urlToyourdirectory.git  ==> I think this says use this repo
-6 git push -u main                  ==> now the real upload of the files
+6 git push -u origin main                  ==> now the real upload of the files
+
+
+git push      # Push commits
+-u            # Set upstream (tracking branch)
+origin        # Remote repository
+main          # Branch name
+
 
 now some other commands.
 git remote -v                      ==> this used to check in which remote (repo / directory) we are going to save our code
 git remote set-url https:urltoyournewRepoOrfolde.git
 
-
+# downloding the existing github content.
+git pull origin main --allow-unrelated-histories
 ==================================================================================================================================
 Git has a pointer called HEAD.
 HEAD points to the current branch.
