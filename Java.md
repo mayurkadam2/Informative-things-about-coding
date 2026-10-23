@@ -1,3 +1,18 @@
+### some things to keep in mind (pending)
+List<Integer> nums = new Arrays.asList(1,2,3);
+Arrays.asList is a method, not a class.
+You cannot use new with a method.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> nums = Arrays.asList(1, 2, 3);
+        System.out.println(nums);
+    }
+}
+
+
 ## this()
 this() is a special constructor call used to invoke another constructor of the same class.
 Rules for this()
